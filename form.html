@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+ARIA 1.0//EN" 
+  "http://www.w3.org/WAI/ARIA/schemata/xhtml-aria-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" >
+
+<head>
+	<title>formulario</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<link rel="stylesheet" href="css.css">
+
+</head>
+	<body>
+		<form action="" method="post">
+			<h2>Registrarse</h2>
+			<div id="content">
+				Usuario (obligatorio):
+				<input name="usuario" id="usuario" type="text" aria-required="true" class= "field" />
+			</div>
+			
+			<div id="content">
+				Contraseña (obligatorio):
+				<input name="clave" id="clave" type="password" class= "field"  />
+				<p id="descripcionClave" class="ayuda">La contraseña debe tener mínimo 6 caracteres</p>
+			</div>
+			
+			<div id="content">
+				Repita contraseña (obligatorio):
+				<input name="clave2" id="clave2" type="password" aria-required="true" class= "field" />
+			</div>
+			
+			<div>
+				<p>Para crear tu cuenta es necesario que aceptes los <a href="#">Términos y condiciones generales</a><br />
+				<input type="checkbox" name="terminos" id="terminos">
+				Acepto términos y condiciones .</p>
+				<input type="checkbox" name="publicidad" id="publicidad">
+				Acepto recibir novedades por correo electrónico. </p>
+				<input type="checkbox" name="perfil" id="perfil">
+				Acepto que mi perfil sea visible.</p>
+			</div>
+			
+			<div id="content"> 
+				<input type="submit" name="Registrarme" class="btn btn-green" value="Registrarme" />
+			</div>
+		</form>
+	</body>
+</html>  

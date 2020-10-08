@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+ARIA 1.0//EN" 
+  "http://www.w3.org/WAI/ARIA/schemata/xhtml-aria-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" >
+
+	<head>
+		<title>formulario</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+		function activar() {
+		$("#inicio").css("display", "none");
+		$("#registro").css("display", "block");
+		setTimeout(desactivar, 5000);
+		}
+
+		function desactivar() {
+		$("#usuario").val("");
+		$("#clave").val('');
+		$("#clave2").val("");
+		$("#registro").css("display", "none");
+		$("#inicio").css("display", "block");
+		}
+
+		</script></script>
+		<link rel="stylesheet" href="css.css">
+		<script src="js.js"></script> 
+	</head>
+
+	<body>
+		<div id="registro" style="display:none">
+			<form action="" method="post">
+				<h2>Registrarse</h2>
+				<div id="content">
+					<label>Usuario (obligatorio):</label> 
+					<input name="usuario" id="usuario" type="text" class= "field" />
+				</div>
+				
+				<div id="content">
+					<label>Contraseña (obligatorio):</label>
+					<input name="clave" id="clave" type="password" class= "field"  />
+					<p id="descripcionClave" class="ayuda">La contraseña debe tener mínimo 6 caracteres</p>
+				</div>
+				
+				<div id="content">
+					<label>Repita contraseña (obligatorio):</label>
+					<input name="clave2" id="clave2" type="password" class= "field" />
+				</div>
+				
+				<div>
+					<p>Para crear tu cuenta es necesario que aceptes los <a href="#">Términos y condiciones generales</a><br />
+					<input type="checkbox" name="terminos" id="terminos">
+					Acepto términos y condiciones.
+					<input type="checkbox" name="publicidad" id="publicidad">
+					Acepto recibir novedades por correo electrónico.
+					<input type="checkbox" name="perfil" id="perfil">
+					Acepto que mi perfil sea visible.</p>
+				</div>
+				
+				<div id="content"> 
+					<input type="submit" name="Registrarme" class="btn btn-green" value="Registrarme" />
+				</div>
+			</form>
+
+		</div>
+
+		<div id="inicio" class= "formulario">
+				<h1>Datos personales</h1>
+				<p>
+Reproduce el audio para escuchar las instrucciones.
+				</p>
+				<button class="btn btn-green redondo" > ► reproducir</button>
+				<button  class="btn btn-green start" onclick="activar()"> 🢂 siguiente</button>
+				<button class="btn btn-red" >🢀 atrás</button>
+				<p></p>
+		</div>
+	</body>
+</html>  

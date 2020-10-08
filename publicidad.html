@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+ARIA 1.0//EN" 
+  "http://www.w3.org/WAI/ARIA/schemata/xhtml-aria-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" >
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+id=0;
+message=["bienvenidos, al registrarte ",
+"podrás gestionar tus turnos online, ",
+"enviarnos consultas, ",
+"recibir soporte técnico ",
+"y contactarte con la mesa de ayuda."];
+
+function iniciar() {
+setInterval(actualizar, 1000);
+}
+
+function actualizar() {
+id=(id+1)%5;
+$("#publicidad").text(message[id]);
+}
+</script>
+<title>formulario</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+
+<link rel="stylesheet" href="css.css">
+
+</head>
+<body onload="iniciar()">
+	<div id="publicidad" role="marquee" aria-live="assertive" class= "publicidad">
+		bienvenidos, al registrarte
+	</div>
+	<form action="" method="post">
+		<h2>Registrarse</h2>
+		<div id="content">
+			<label for="usuario">Usuario (obligatorio):</label> 
+			<input name="usuario" id="usuario" type="text" aria-required="true" class= "field" />
+		</div>
+		
+		<div id="content">
+			<label for="clave">Contraseña (obligatorio):</label>
+			<input name="clave" id="clave" type="password" aria-describedby="descripcionClave"  aria-required="true" class= "field"  />
+			<p id="descripcionClave" class="ayuda">La contraseña debe tener mínimo 6 caracteres</p>
+		</div>
+		
+		<div id="content">
+			<label for="clave2">Repita contraseña (obligatorio):</label>
+			<input name="clave2" id="clave2" type="password" aria-required="true" class= "field" />
+		</div>
+		
+		<div>
+			<p>Para crear tu cuenta es necesario que aceptes los <a href="#">Términos y condiciones generales</a><br />
+			<input type="checkbox" name="terminos" id="terminos">
+			<label for="terminos">Acepto términos y condiciones .</label> </p>
+			<input type="checkbox" name="publicidad" id="publicidad">
+			<label for="publicidad">Acepto recibir novedades por correo electrónico.</label> </p>
+			<input type="checkbox" name="perfil" id="perfil">
+			<label for="perfil">Acepto que mi perfil sea visible.</label> </p>
+		</div>
+		
+		<div id="content"> 
+			<input type="submit" name="Registrarme" class="btn btn-green" value="Registrarme" />
+		</div>
+	</form>
+</body>
+</html>  

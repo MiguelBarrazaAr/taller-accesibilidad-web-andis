@@ -1,0 +1,112 @@
+body {
+  background-color: #18a383;
+  font-family: Arial;
+  font: 100%;
+}
+
+form {
+  background-color: white;
+  border-radius: 5px;
+  padding: 25px;
+  color: #222222;
+  margin: 0 auto;
+  width: 400px;
+  font-size: 0.8em;
+  box-shadow: 7px 13px 37px #333;
+}
+
+.publicidad {
+  background-color: white;
+  padding: 50px;
+  color: #222222;
+  font-family: Arial;
+  font-size: 150%;
+  font-style: oblique;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1rem;
+  width: 500px;
+}
+
+.formulario {
+  background-color: white;
+  border-radius: 5px;
+  padding: 25px;
+  color: #222222;
+  margin: 0 auto;
+  width: 400px;
+  font-size: 0.8em;
+  box-shadow: 7px 13px 37px #333;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  border: 0;
+  outline: none;
+}
+
+.field {
+  border: solid 1px #cccccc;
+  padding: 10px;
+}
+
+.field:focus {
+  border-color: #18a383;
+}
+
+div {
+  margin-bottom: 2em;
+}
+p.ayuda {
+  font-size: 0.9em;
+}
+
+.btn {
+  border-radius: 3px;
+  display: inline-block;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.btn-green {
+  color: black;
+  background-color: #3cc93f;
+}
+.btn-green:hover {
+  background-color: #37b839;
+}
+.btn-green:active {
+  background-color: #29962a;
+}
+
+.start {
+  font-weight: bold;
+}
+
+.redondo {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 1px;
+  font-family: inherit;
+  font-size: 1.2em;
+}
+
+.btn-red {
+  color: white;
+  background-color: #e34242;
+}
+.btn-red:hover {
+  background-color: #c43535;
+}
+.btn-red:active {
+  background-color: #a62828;
+}
