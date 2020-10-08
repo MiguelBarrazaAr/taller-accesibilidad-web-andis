@@ -68,7 +68,7 @@
 				<p>
 Reproduce el audio para escuchar las instrucciones.
 				</p>
-				<button id="play" class="btn btn-green redondo" title="play"> ► </button>
+				<button id="play" class="btn btn-green redondo" onclick="document.getElementById('reproductor').play();"> ► </button>
 				<label for="play" class="escondido">Reproducir</label>
 				<button id="next"  class="btn btn-green start" onclick="activar()"> 🢂 </button>
 				<label for="next"  class="escondido">siguiente</label>
@@ -76,5 +76,12 @@ Reproduce el audio para escuchar las instrucciones.
 				<label for="back" class="escondido">atrás</label></label>
 				<p></p>
 		</div>
+		
+		<div id="player" style="display:none">
+
+<audio volume="0.0" id="reproductor">
+<source id="audioSource" src="audio.mp3" type="audio/mpeg">
+</audio>
+</div>
 	</body>
 </html>  
