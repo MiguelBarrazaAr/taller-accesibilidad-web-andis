@@ -110,3 +110,7 @@ p.ayuda {
 .btn-red:active {
   background-color: #a62828;
 }
+
+.escondido {
+  font-size: 0%;
+}
