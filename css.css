@@ -87,6 +87,17 @@ p.ayuda {
   background-color: #29962a;
 }
 
+.btn-blue {
+  color: black;
+  background-color: #232fd8;
+}
+.btn-blue:hover {
+  background-color: #1e28b4;
+}
+.btn-blue:active {
+  background-color: #161d83;
+}
+
 .start {
   font-weight: bold;
 }
